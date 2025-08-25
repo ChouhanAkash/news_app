@@ -26,7 +26,7 @@ export default function NewsList({ mode="top", category="business", country="in"
       setStatus("loading");
       setErr("");
       try {
-        const res = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2025-07-25&sortBy=publishedAt&apiKey=366a0dcdcb8346c592ea214d27ee29c3');
+        const res = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2025-07-25&sortBy=publishedAt&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`);
         let data=await res.json()
         if (!alive) return;
         setArticles(data.articles || []);
