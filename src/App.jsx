@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import NewsList from "./components/NewsList.jsx";
-import BookmarkDrawer from "./components/BookMarkDrawer.jsx";
 import { useBookmarks } from "./context/BookmarksContext.jsx";
+import BookmarkDrawer from "./components/BookMarkDrawer.jsx";
 
 export default function App() {
   const [category, setCategory] = useState("business");
