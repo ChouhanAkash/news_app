@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import ArticleCard from "./ArticleCard.jsx";
-import { fetchTopHeadlines, searchEverything } from "../services/newsApi";
 import useInfiniteScroll from "../hooks/useInfiniteScroll";
+import { fetchTopHeadlines, searchEverything } from "../services/NewsApi.jsx";
 
 const PAGE_SIZE = 12;
 
