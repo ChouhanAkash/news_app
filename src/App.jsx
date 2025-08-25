@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import NewsList from "./components/NewsList.jsx";
 import { useBookmarks } from "./context/BookmarksContext.jsx";
-import BookmarkDrawer from "./components/BookMarkDrawer.jsx";
+
+
 
 export default function App() {
   const [category, setCategory] = useState("business");
@@ -36,7 +37,6 @@ export default function App() {
         sortBy={sortBy}
       />
 
-      <BookmarkDrawer open={showBookmarks} onClose={()=>setShowBookmarks(false)} />
     </div>
   );
 }
